@@ -1,10 +1,13 @@
 "use client";
-import { useState } from "react";
+
+import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import { GlobeDemo } from "./GridGlobe";
 import Lottie from "react-lottie";
 import animationData from "@/data/confetti.json";
+import MagicButton from "./MagicButton";
+import { IoCopyOutline } from "react-icons/io5";
 
 export const BentoGrid = ({
   className,
@@ -16,6 +19,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
+        // change gap-4 to gap-8, change grid-cols-3 to grid-cols-5, remove md:auto-rows-[18rem], add responsive code
         "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto",
         className
       )}
@@ -45,6 +49,21 @@ export const BentoGridItem = ({
   spareImg?: string;
 }) => {
   const [copied, setCopied] = useState(false);
+  const [showGlobe, setShowGlobe] = useState(false);
+  const handleCopy = () => {
+    navigator.clipboard.writeText("ovsiichuk.bohdan@gmail.com");
+    setCopied(true);
+  };
+
+  useEffect(() => {
+    if (id === 2) {
+      const timer = setTimeout(() => {
+        setShowGlobe(true);
+      }, 800);
+
+      return () => clearTimeout(timer);
+    }
+  }, [id]);
 
   return (
     <div
@@ -59,7 +78,7 @@ export const BentoGridItem = ({
           "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(56,50,57,1) 35%, rgba(0,57,110,1) 100%)",
       }}
     >
-      <div className={`${id === 6}&&'flex justify-center h-full`}>
+      <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute">
           {img && (
             <img
@@ -102,7 +121,7 @@ export const BentoGridItem = ({
             {title}
           </div>
 
-          {id === 2 && <GlobeDemo />}
+          {id === 2 && showGlobe && <GlobeDemo />}
           {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
               <div className="flex flex-col gap-3 lg:gap-8">
@@ -144,6 +163,13 @@ export const BentoGridItem = ({
                   }}
                 />
               </div>
+              <MagicButton
+                title={copied ? "Email copied" : "Copy my email"}
+                icon={<IoCopyOutline />}
+                position="left"
+                otherClasses="bg-[#161a31]"
+                handleClick={handleCopy}
+              />
             </div>
           )}
         </div>
