@@ -20,7 +20,7 @@ export const BentoGrid = ({
     <div
       className={cn(
         // change gap-4 to gap-8, change grid-cols-3 to grid-cols-5, remove md:auto-rows-[18rem], add responsive code
-        "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto",
+        "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto dark:text-white",
         className
       )}
     >
@@ -104,7 +104,7 @@ export const BentoGridItem = ({
 
         {id === 6 && (
           <BackgroundGradientAnimation>
-            <div className="absolute z-50 flex items-center justify-center text-white font-bold " />
+            {/* <div className="absolute z-50 flex items-center justify-center text-white font-bold " /> */}
           </BackgroundGradientAnimation>
         )}
 
@@ -123,7 +123,7 @@ export const BentoGridItem = ({
 
           {id === 2 && showGlobe && <GlobeDemo />}
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2 dark:text-gray-500">
               <div className="flex flex-col gap-3 lg:gap-8">
                 {["React.js", "Next.js", "TypeScript"].map((item) => (
                   <span
