@@ -7,7 +7,7 @@ import { PinContainer } from "./ui/Pin";
 
 const RecentProjects = () => {
   return (
-    <div className="py-20 dark:text-white">
+    <div id="projects" className="py-20 dark:text-white">
       <h1 className="heading">
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
@@ -24,7 +24,7 @@ const RecentProjects = () => {
             >
               <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10">
                 <div
-                  className="relative w-full h-full overflow-hidden lg:rounded-3xl"
+                  className="relative w-full h-full overflow-hidden sm:h-[40vh]  lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
                   <img src="/bg.png" alt="bgimg" />
