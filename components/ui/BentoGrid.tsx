@@ -59,7 +59,7 @@ export const BentoGridItem = ({
     if (id === 2) {
       const timer = setTimeout(() => {
         setShowGlobe(true);
-      }, 800);
+      }, 1200);
 
       return () => clearTimeout(timer);
     }
