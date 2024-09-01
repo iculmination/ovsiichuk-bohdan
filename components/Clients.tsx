@@ -15,11 +15,12 @@ const Clients = () => {
           direction="right"
         />
 
-        <div className="flex flex-row flex-wrap items-center justify-center gap-4 md:gap-16 max-lg:mt-10">
+        <div className="flex flex-wrap items-center justify-center gap-4 md:gap-8 max-lg:mt-10">
           {companies.map(({ id, img, name, nameImg }) => (
-            <div key={id} className="flex md:max-w-16 max-w-32 gap-2">
-              <img src={img} alt={name} className="md:w-10 w-5" />
-              <img src={nameImg} alt={name} className="md:w-24 w-20" />
+            <div key={id} className="flex  gap-2 items-center">
+              <img src={img} alt={name} className="md:w-10 w-5 rounded-lg" />
+              {/* <img src={nameImg} alt={name} className="md:w-24 w-20" /> */}
+              <p className="">{nameImg}</p>
             </div>
           ))}
         </div>

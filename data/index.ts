@@ -49,8 +49,9 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
+    title: "I am learning by working on projects",
+    // description: "The Inside Scoop",
+    description: "Every day",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -106,67 +107,78 @@ export const projects = [
 
 export const testimonials = [
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    quote: "Text will appear here soon 🙃",
+    name: "Text will appear here soon 🙃",
+    title: "Text will appear here soon 🙃",
+    avatar: "/profile.svg",
   },
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    quote: "Text will appear here soon 🙃",
+    name: "Text will appear here soon 🙃",
+    title: "Text will appear here soon 🙃",
+    avatar: "/profile.svg",
   },
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    quote: "Text will appear here soon 🙃",
+    name: "Text will appear here soon 🙃",
+    title: "Text will appear here soon 🙃",
+    avatar: "/profile.svg",
   },
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    quote: "Text will appear here soon 🙃",
+    name: "Text will appear here soon 🙃",
+    title: "Text will appear here soon 🙃",
+    avatar: "/profile.svg",
   },
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    quote: "Text will appear here soon 🙃",
+    name: "Text will appear here soon 🙃",
+    title: "Text will appear here soon 🙃",
+    avatar: "/profile.svg",
+  },
+  {
+    quote: "Text will appear here soon 🙃",
+    name: "Text will appear here soon 🙃",
+    title: "Text will appear here soon 🙃",
+    avatar: "/profile.svg",
   },
 ];
 
 export const companies = [
   {
     id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
+    name: "react",
+    img: "/React.webp",
+    // nameImg: "/cloudName.svg",
+    nameImg: "React.js",
   },
   {
     id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
+    name: "next",
+    img: "/next.png",
+    // nameImg: "/appName.svg",
+    nameImg: "Next.js",
   },
   {
     id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
+    name: "tailwind",
+    img: "/tailwind-css-logo-5AD4175897-seeklogo.com.png",
+    // nameImg: "/hostName.svg",
+    nameImg: "TailwindCSS",
   },
   {
     id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
+    name: "ts",
+    img: "/free-typescript-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-company-brand-vol-7-pack-logos-icons-2945272.webp",
+    // nameImg: "/streamName.svg",
+    nameImg: "TypeScript",
   },
   {
     id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
+    name: "gh",
+    img: "/github-6980894_960_720.webp",
+    // nameImg: "/dockerName.svg",
+    nameImg: "GitHub",
   },
 ];
 
@@ -205,13 +217,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/iculmination",
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/pngfind.com-twitter-png-logo-530160.png",
+    link: "https://t.me/i_culmination",
   },
   {
     id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/bohdan-ovsiichuk/",
   },
 ];
