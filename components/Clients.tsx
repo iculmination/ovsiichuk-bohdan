@@ -20,7 +20,7 @@ const Clients = () => {
             <div key={id} className="flex  gap-2 items-center">
               <img src={img} alt={name} className="md:w-10 w-5 rounded-lg" />
               {/* <img src={nameImg} alt={name} className="md:w-24 w-20" /> */}
-              <p className="">{nameImg}</p>
+              <p className="cursor-default">{nameImg}</p>
             </div>
           ))}
         </div>
