@@ -17,8 +17,8 @@ const Hero = () => {
         />
         <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
       </div>
-      <div className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.05] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
+      <div className="h-screen w-full bg-black-100 bg-grid-white/[0.05] flex items-center justify-center absolute top-0 left-0">
+        <div className="absolute pointer-events-none inset-0 flex items-center justify-centerbg-black-100 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
       </div>
 
       <div className="flex justify-center relative my-20 z-10">
@@ -30,7 +30,7 @@ const Hero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
             words="Transforming concepts into Seamless User Experiences"
           />
-          <p className="text-center dark:text-white text-black md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+          <p className="text-center text-white md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
             Hi, I&apos;m Bohdan, a Next.js Developer based in Ukraine.
           </p>
           <a href="#about">

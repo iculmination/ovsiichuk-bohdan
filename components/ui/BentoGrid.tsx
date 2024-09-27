@@ -19,7 +19,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto dark:text-white",
+        "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto text-white",
         className
       )}
     >
@@ -67,7 +67,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1 relative overflow-hidden rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-non justify-between flex flex-col space-y-4 border border-white/[0.1]",
+        "row-span-1 relative overflow-hidden rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input shadow-none justify-between flex flex-col space-y-4 border border-white/[0.1]",
         className
       )}
       style={{
@@ -113,16 +113,16 @@ export const BentoGridItem = ({
             "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
           )}
         >
-          <div className="font-sans font-extralight  dark:text-[#c1c2d3] text-sm md:text-xs lg:text-base z-10">
+          <div className="font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base z-10">
             {description}
           </div>
-          <div className="font-sans font-bold dark:text-white text-lg lg:text-3xl max-w-96 z-10">
+          <div className="font-sans font-bold text-white text-lg lg:text-3xl max-w-96 z-10">
             {title}
           </div>
 
           {id === 2 && showGlobe && <GlobeDemo />}
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2 dark:text-gray-500">
+            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2 text-gray-500">
               <div className="flex flex-col gap-3 lg:gap-8">
                 {["React.js", "Next.js", "TypeScript"].map((item) => (
                   <span

@@ -15,7 +15,7 @@ const Footer = () => {
       </div>
 
       <div className="flex flex-col items-center">
-        <h1 className="heading lg:max-w-[45vw] dark:text-white">
+        <h1 className="heading lg:max-w-[45vw] text-white">
           Ready to take <span className="text-purple">your</span> outside
           digital presence to the next level?
         </h1>
@@ -31,7 +31,7 @@ const Footer = () => {
           />
         </a>
       </div>
-      <div className="dark:text-white-200 flex mt-16 md:flex-row flex-col justify-between items-center">
+      <div className="text-white-200 flex mt-16 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">
           Copyright © 2024 Ovsiichuk Bohdan
         </p>

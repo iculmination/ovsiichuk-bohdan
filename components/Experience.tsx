@@ -4,7 +4,7 @@ import { Button } from "./ui/MovingBorders";
 
 const Experience = () => {
   return (
-    <div id="testimonials" className="py-20 dark:text-white">
+    <div id="testimonials" className="py-20 text-white">
       <h1 className="heading">
         My <span className="text-purple">work experience</span>
       </h1>
@@ -13,7 +13,7 @@ const Experience = () => {
           <Button
             key={card.id}
             borderRadius="1.75rem"
-            className="flex-1 text-white border-neutral-200 dark:border-slate-800 "
+            className="flex-1 text-white border-slate-800 "
             duration={Math.floor(Math.random() * 10000 + 10000)}
           >
             <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
